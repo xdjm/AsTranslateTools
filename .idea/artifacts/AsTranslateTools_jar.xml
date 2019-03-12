@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AsTranslateTools:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AsTranslateTools_jar</output-path>
+    <root id="archive" name="AsTranslateTools.jar">
+      <element id="module-output" name="AsTranslateTools" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpcore-nio-4.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpasyncclient-cache-4.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.22-bin" />
+      <element id="library" level="project" name="log4j-1.2.17" />
+      <element id="library" level="project" name="jsoup-1.8.3" />
+      <element id="library" level="project" name="commons-httpclient-3.1" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="json_simple-1.1" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpclient-4.4.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="microsoft-translator-java-api-0.6.2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-io-2.4.jar" path-in-jar="/" />
+      <element id="library" level="project" name="commons-codec-1.9" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpclient-cache-4.4.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="httpmime-4.1.2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpasyncclient-4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpcore-4.4.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

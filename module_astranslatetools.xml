@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_astranslatetools" default="compile.module.astranslatetools">
+  <dirname property="module.astranslatetools.basedir" file="${ant.file.module_astranslatetools}"/>
+  
+  <property name="module.jdk.home.astranslatetools" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.astranslatetools" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.astranslatetools" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.astranslatetools" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="astranslatetools.output.dir" value="${module.astranslatetools.basedir}/out/production/AsTranslateTools"/>
+  <property name="astranslatetools.testoutput.dir" value="${module.astranslatetools.basedir}/out/test/AsTranslateTools"/>
+  
+  <path id="astranslatetools.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="astranslatetools.module.production.classpath">
+    <path refid="${module.jdk.classpath.astranslatetools}"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.commons-httpclient-3.1.classpath"/>
+    <path refid="library.commons-io-2.4.classpath"/>
+    <path refid="library.commons-logging-1.2.classpath"/>
+    <path refid="library.httpasyncclient-4.1.classpath"/>
+    <path refid="library.httpasyncclient-cache-4.1.classpath"/>
+    <path refid="library.httpclient-4.4.1.classpath"/>
+    <path refid="library.httpclient-cache-4.4.1.classpath"/>
+    <path refid="library.httpcore-4.4.1.classpath"/>
+    <path refid="library.httpcore-nio-4.4.1.classpath"/>
+    <path refid="library.httpmime-4.1.2.classpath"/>
+    <path refid="library.json_simple-1.1.classpath"/>
+    <path refid="library.jsoup-1.8.3.classpath"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.microsoft-translator-java-api-0.6.2.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.22-bin.classpath"/>
+  </path>
+  
+  <path id="astranslatetools.runtime.production.module.classpath">
+    <pathelement location="${astranslatetools.output.dir}"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.commons-httpclient-3.1.classpath"/>
+    <path refid="library.commons-io-2.4.classpath"/>
+    <path refid="library.commons-logging-1.2.classpath"/>
+    <path refid="library.httpasyncclient-4.1.classpath"/>
+    <path refid="library.httpasyncclient-cache-4.1.classpath"/>
+    <path refid="library.httpclient-4.4.1.classpath"/>
+    <path refid="library.httpclient-cache-4.4.1.classpath"/>
+    <path refid="library.httpcore-4.4.1.classpath"/>
+    <path refid="library.httpcore-nio-4.4.1.classpath"/>
+    <path refid="library.httpmime-4.1.2.classpath"/>
+    <path refid="library.json_simple-1.1.classpath"/>
+    <path refid="library.jsoup-1.8.3.classpath"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.microsoft-translator-java-api-0.6.2.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.22-bin.classpath"/>
+  </path>
+  
+  <path id="astranslatetools.module.classpath">
+    <path refid="${module.jdk.classpath.astranslatetools}"/>
+    <pathelement location="${astranslatetools.output.dir}"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.commons-httpclient-3.1.classpath"/>
+    <path refid="library.commons-io-2.4.classpath"/>
+    <path refid="library.commons-logging-1.2.classpath"/>
+    <path refid="library.httpasyncclient-4.1.classpath"/>
+    <path refid="library.httpasyncclient-cache-4.1.classpath"/>
+    <path refid="library.httpclient-4.4.1.classpath"/>
+    <path refid="library.httpclient-cache-4.4.1.classpath"/>
+    <path refid="library.httpcore-4.4.1.classpath"/>
+    <path refid="library.httpcore-nio-4.4.1.classpath"/>
+    <path refid="library.httpmime-4.1.2.classpath"/>
+    <path refid="library.json_simple-1.1.classpath"/>
+    <path refid="library.jsoup-1.8.3.classpath"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.microsoft-translator-java-api-0.6.2.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.22-bin.classpath"/>
+  </path>
+  
+  <path id="astranslatetools.runtime.module.classpath">
+    <pathelement location="${astranslatetools.testoutput.dir}"/>
+    <pathelement location="${astranslatetools.output.dir}"/>
+    <path refid="library.commons-codec-1.9.classpath"/>
+    <path refid="library.commons-httpclient-3.1.classpath"/>
+    <path refid="library.commons-io-2.4.classpath"/>
+    <path refid="library.commons-logging-1.2.classpath"/>
+    <path refid="library.httpasyncclient-4.1.classpath"/>
+    <path refid="library.httpasyncclient-cache-4.1.classpath"/>
+    <path refid="library.httpclient-4.4.1.classpath"/>
+    <path refid="library.httpclient-cache-4.4.1.classpath"/>
+    <path refid="library.httpcore-4.4.1.classpath"/>
+    <path refid="library.httpcore-nio-4.4.1.classpath"/>
+    <path refid="library.httpmime-4.1.2.classpath"/>
+    <path refid="library.json_simple-1.1.classpath"/>
+    <path refid="library.jsoup-1.8.3.classpath"/>
+    <path refid="library.log4j-1.2.17.classpath"/>
+    <path refid="library.microsoft-translator-java-api-0.6.2.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.22-bin.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.astranslatetools">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.astranslatetools">
+    <patternset refid="excluded.from.module.astranslatetools"/>
+  </patternset>
+  
+  <path id="astranslatetools.module.sourcepath">
+    <dirset dir="${module.astranslatetools.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.astranslatetools" depends="compile.module.astranslatetools.production,compile.module.astranslatetools.tests" description="Compile module AsTranslateTools"/>
+  
+  <target name="compile.module.astranslatetools.production" depends="register.custom.compilers" description="Compile module AsTranslateTools; production classes">
+    <mkdir dir="${astranslatetools.output.dir}"/>
+    <javac2 destdir="${astranslatetools.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.astranslatetools}/javac">
+      <compilerarg line="${compiler.args.astranslatetools}"/>
+      <bootclasspath refid="astranslatetools.module.bootclasspath"/>
+      <classpath refid="astranslatetools.module.production.classpath"/>
+      <src refid="astranslatetools.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.astranslatetools"/>
+    </javac2>
+    
+    <copy todir="${astranslatetools.output.dir}">
+      <fileset dir="${module.astranslatetools.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.astranslatetools.tests" depends="register.custom.compilers,compile.module.astranslatetools.production" description="compile module AsTranslateTools; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.astranslatetools" description="cleanup module">
+    <delete dir="${astranslatetools.output.dir}"/>
+    <delete dir="${astranslatetools.testoutput.dir}"/>
+  </target>
+</project>
